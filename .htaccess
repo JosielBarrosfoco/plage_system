@@ -1,0 +1,16 @@
+# Configuração para deployment automático
+# Redireciona para a pasta dist/client após o build
+
+# Se a pasta dist/client existe, serve os arquivos de lá
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Verifica se dist/client existe e redireciona
+  RewriteCond %{REQUEST_URI} !^/dist/client/
+  RewriteCond %{DOCUMENT_ROOT}/dist/client/index.html -f
+  RewriteRule ^(.*)$ /dist/client/$1 [L]
+</IfModule>
+
+# Fallback: se não encontrar, tenta servir da raiz
+DirectoryIndex index.html
+

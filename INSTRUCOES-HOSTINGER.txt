@@ -1,0 +1,39 @@
+═══════════════════════════════════════════════════════════════
+  🚀 INSTRUÇÕES RÁPIDAS - DEPLOY NA HOSTINGER
+═══════════════════════════════════════════════════════════════
+
+📦 ARQUIVOS PARA UPLOAD:
+   Pasta: dist/client/
+   
+   ✅ index.html
+   ✅ assets/ (pasta completa com os arquivos dentro)
+   ✅ .htaccess
+
+📍 ONDE FAZER UPLOAD:
+   No cPanel da Hostinger → Gerenciador de Arquivos → public_html/
+
+🔧 PERMISSÕES:
+   .htaccess → 644
+   index.html → 644
+   assets/ → 755
+
+⚡ PASSOS RÁPIDOS:
+   1. Acesse: https://hpanel.hostinger.com
+   2. Abra "Gerenciador de Arquivos"
+   3. Vá para public_html/
+   4. Delete tudo que estiver lá
+   5. Faça upload de TODOS os arquivos de dist/client/
+   6. Verifique permissões
+   7. Pronto! Acesse seu domínio
+
+❌ NÃO ENVIE:
+   - Pasta dist/client/client/ (é duplicada, ignore)
+   - Pasta dist/client/019b2e7b_ce1c_747b_a372_7a46832adeec/ (não precisa)
+
+✅ ENVIE APENAS:
+   - index.html
+   - assets/ (pasta completa)
+   - .htaccess
+
+═══════════════════════════════════════════════════════════════
+

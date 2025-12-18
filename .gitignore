@@ -1,4 +1,9 @@
-dist/
+# Build outputs - mantenha dist/client/ para deployment
+dist/019b2e7b_ce1c_747b_a372_7a46832adeec/
+dist/client/019b2e7b_ce1c_747b_a372_7a46832adeec/
+dist/client/client/
+
+# Dependências
 node_modules/
 .wrangler/
 .dev.vars

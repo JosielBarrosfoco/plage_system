@@ -7,11 +7,14 @@ import { mochaPlugins } from "@getmocha/vite-plugins";
 export default defineConfig({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   plugins: [...mochaPlugins(process.env as any), react(), cloudflare()],
+  base: './', // Usa caminhos relativos para funcionar em qualquer subpasta
   server: {
     allowedHosts: true,
   },
   build: {
     chunkSizeWarningLimit: 5000,
+    outDir: 'dist/client',
+    emptyOutDir: true,
   },
   resolve: {
     alias: {

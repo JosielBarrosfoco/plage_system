@@ -34,7 +34,7 @@
     "wrangler": "^4.33.0"
   },
   "scripts": {
-    "build": "tsc -b && vite build && node scripts/copy-deploy-config.js",
+    "build": "tsc -b && vite build && node scripts/copy-deploy-config.js && node scripts/fix-paths.js",
     "cf-typegen": "wrangler types",
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "dev": "vite",
