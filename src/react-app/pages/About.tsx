@@ -1,4 +1,5 @@
-import { Target, Users, Award, TrendingUp } from 'lucide-react';
+import { Target, Users, Award, TrendingUp, Mail, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router';
 import Navbar from '@/react-app/components/Navbar';
 import Footer from '@/react-app/components/Footer';
 import CircuitBackground from '@/react-app/components/CircuitBackground';
@@ -188,6 +189,36 @@ export default function About() {
                   <span className="text-white/80 font-medium">{cert}</span>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="relative py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="glass-effect p-12 rounded-3xl">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+              Vamos conversar?
+            </h2>
+            <p className="text-xl text-white/60 mb-8 max-w-2xl mx-auto">
+              Estamos prontos para entender suas necessidades e criar soluções que transformem seu negócio.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="mailto:suporte@plagesystem.com.br"
+                className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105"
+              >
+                <Mail className="w-5 h-5" />
+                <span>suporte@plagesystem.com.br</span>
+              </a>
+              <Link
+                to="/portfolio"
+                className="inline-flex items-center space-x-2 px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
+              >
+                <span>Ver Portfólio</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </div>

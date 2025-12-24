@@ -111,7 +111,7 @@ export default function ClientArea() {
             </div>
 
             <p className="text-center text-white/40 text-sm mt-6">
-              Não é cliente? <a href="#" className="text-plage-teal hover:text-plage-teal-light transition-colors">Entre em contato</a>
+              Não é cliente? <a href="mailto:suporte@plagesystem.com.br" className="text-plage-teal hover:text-plage-teal-light transition-colors">Entre em contato</a>
             </p>
           </div>
         </section>
@@ -192,9 +192,12 @@ export default function ClientArea() {
               <p className="text-white/60 mb-4">
                 Nossa equipe está disponível 24/7 para ajudar você
               </p>
-              <button className="px-6 py-2.5 bg-plage-gold/20 text-plage-gold border border-plage-gold/30 rounded-lg hover:bg-plage-gold/30 transition-colors">
+              <a 
+                href="mailto:suporte@plagesystem.com.br" 
+                className="inline-block px-6 py-2.5 bg-plage-gold/20 text-plage-gold border border-plage-gold/30 rounded-lg hover:bg-plage-gold/30 transition-colors"
+              >
                 Abrir chamado
-              </button>
+              </a>
             </div>
           </div>
         </div>

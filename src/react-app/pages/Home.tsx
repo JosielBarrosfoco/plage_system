@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { ArrowRight, Cpu, Zap, Shield, Network, Code, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Cpu, Zap, Shield, Network, Code, Sparkles, CheckCircle2, Mail } from 'lucide-react';
 import Navbar from '@/react-app/components/Navbar';
 import Footer from '@/react-app/components/Footer';
 import CircuitBackground from '@/react-app/components/CircuitBackground';
@@ -210,13 +210,22 @@ export default function Home() {
               Entre em contato e descubra como podemos ajudar a impulsionar sua empresa 
               com tecnologia de ponta.
             </p>
-            <Link
-              to="/sobre"
-              className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105"
-            >
-              <span>Falar com Especialista</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                to="/sobre"
+                className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105"
+              >
+                <span>Falar com Especialista</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="mailto:suporte@plagesystem.com.br"
+                className="inline-flex items-center space-x-2 px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
+              >
+                <Mail className="w-5 h-5" />
+                <span>suporte@plagesystem.com.br</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

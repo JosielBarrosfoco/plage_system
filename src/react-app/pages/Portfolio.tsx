@@ -171,9 +171,12 @@ export default function Portfolio() {
           <p className="text-xl text-white/60 mb-8">
             Vamos conversar sobre como podemos transformar suas ideias em realidade
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105">
-            Iniciar um Projeto
-          </button>
+          <a 
+            href="mailto:suporte@plagesystem.com.br"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105"
+          >
+            <span>Iniciar um Projeto</span>
+          </a>
         </div>
       </section>
 
