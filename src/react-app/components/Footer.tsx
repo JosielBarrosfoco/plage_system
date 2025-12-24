@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <img 
-              src="https://019b2e7b-ce1c-747b-a372-7a46832adeec.mochausercontent.com/LOGO.png" 
+              src="/LOGO.png" 
               alt="PLAGE System" 
               className="h-10 w-auto"
             />

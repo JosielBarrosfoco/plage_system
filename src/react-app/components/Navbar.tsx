@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src="https://019b2e7b-ce1c-747b-a372-7a46832adeec.mochausercontent.com/LOGO.png" 
+              src="/LOGO.png" 
               alt="PLAGE System" 
               className="h-12 w-auto transition-transform group-hover:scale-105"
             />
