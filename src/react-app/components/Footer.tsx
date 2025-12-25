@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -8,11 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <img 
-              src="/LOGO.png" 
-              alt="PLAGE System" 
-              className="h-10 w-auto"
-            />
+            <Logo className="h-10 w-auto" />
             <p className="text-white/60 text-sm leading-relaxed">
               Conectando tecnologia, negócios e inovação através de sistemas inteligentes e soluções corporativas.
             </p>

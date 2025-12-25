@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +22,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img 
-              src="/LOGO.png" 
-              alt="PLAGE System" 
-              className="h-12 w-auto transition-transform group-hover:scale-105"
-            />
+            <Logo className="h-12 w-auto transition-transform group-hover:scale-105" />
           </Link>
 
           {/* Desktop Navigation */}
