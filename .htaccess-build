@@ -1,0 +1,8 @@
+# Configuração para Hostinger - Build Automático
+# Se o Node.js estiver disponível, executa o build
+
+# Verifica se node_modules existe, se não, instala dependências
+<IfModule mod_env.c>
+  SetEnv NPM_CONFIG_PRODUCTION false
+</IfModule>
+
