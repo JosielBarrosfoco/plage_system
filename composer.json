@@ -1,0 +1,12 @@
+{
+  "name": "plage-system",
+  "description": "PLAGE System - Tecnologia e Inovação",
+  "type": "project",
+  "scripts": {
+    "post-install-cmd": [
+      "echo 'Este é um projeto Node.js/React. Os arquivos buildados estão em dist/client/'"
+    ]
+  },
+  "require": {}
+}
+

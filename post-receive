@@ -1,0 +1,26 @@
+#!/bin/bash
+# Git hook para deployment automático na Hostinger
+# Este script é executado após git pull
+
+echo "🚀 Iniciando deployment..."
+
+# Diretório do projeto
+PROJECT_DIR=$(pwd)
+BUILD_DIR="$PROJECT_DIR/dist/client"
+PUBLIC_DIR="$PROJECT_DIR/public_html"
+
+# Se dist/client existe, copia para public_html
+if [ -d "$BUILD_DIR" ]; then
+    echo "📦 Copiando arquivos de dist/client/ para public_html/..."
+    
+    # Cria public_html se não existir
+    mkdir -p "$PUBLIC_DIR"
+    
+    # Copia arquivos
+    cp -r "$BUILD_DIR"/* "$PUBLIC_DIR"/
+    
+    echo "✅ Deployment concluído!"
+else
+    echo "⚠️  Pasta dist/client/ não encontrada"
+fi
+

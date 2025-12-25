@@ -1,0 +1,17 @@
+# Configuração para Hostinger - Deployment Automático
+# Este arquivo ajuda a Hostinger a identificar e servir os arquivos corretos
+
+# Redireciona para dist/client se existir
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Se a pasta dist/client existe, redireciona para lá
+  RewriteCond %{REQUEST_URI} !^/dist/client/
+  RewriteCond %{DOCUMENT_ROOT}/dist/client/index.html -f
+  RewriteRule ^(.*)$ /dist/client/$1 [L]
+</IfModule>
+
+# Directory index
+DirectoryIndex dist/client/index.html index.html
+
