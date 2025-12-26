@@ -1,4 +1,4 @@
-import { Target, Users, Award, TrendingUp, Mail, ArrowRight } from 'lucide-react';
+import { Target, Users, Award, TrendingUp, Mail, ArrowRight, MapPin, Globe } from 'lucide-react';
 import { Link } from 'react-router';
 import Navbar from '@/react-app/components/Navbar';
 import Footer from '@/react-app/components/Footer';
@@ -196,29 +196,74 @@ export default function About() {
 
       {/* Contact Section */}
       <section className="relative py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-effect p-12 rounded-3xl">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-              Vamos conversar?
-            </h2>
-            <p className="text-xl text-white/60 mb-8 max-w-2xl mx-auto">
-              Estamos prontos para entender suas necessidades e criar soluções que transformem seu negócio.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="mailto:suporte@plagesystem.com.br"
-                className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105"
-              >
-                <Mail className="w-5 h-5" />
-                <span>suporte@plagesystem.com.br</span>
-              </a>
-              <Link
-                to="/portfolio"
-                className="inline-flex items-center space-x-2 px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300"
-              >
-                <span>Ver Portfólio</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Vamos conversar?
+              </h2>
+              <p className="text-xl text-white/60 max-w-2xl mx-auto">
+                Estamos prontos para entender suas necessidades e criar soluções que transformem seu negócio.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-plage-teal">Informações de Contato</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <Mail className="w-5 h-5 text-plage-teal mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="text-white/60 text-sm mb-1">E-mail</p>
+                        <a 
+                          href="mailto:suporte@plagesystem.com.br" 
+                          className="text-white hover:text-plage-teal transition-colors font-medium"
+                        >
+                          suporte@plagesystem.com.br
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="w-5 h-5 text-plage-teal mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="text-white/60 text-sm mb-1">Endereço</p>
+                        <p className="text-white font-medium">
+                          832 Avenida General Ataíde Teive
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Globe className="w-5 h-5 text-plage-teal mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="text-white/60 text-sm mb-1">Site</p>
+                        <p className="text-white font-medium">
+                          PLAGE System - Tecnologia e Inovação
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex flex-col justify-center">
+                <div className="space-y-4">
+                  <a
+                    href="mailto:suporte@plagesystem.com.br"
+                    className="inline-flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-dark text-plage-dark font-semibold rounded-xl hover:shadow-2xl hover:shadow-plage-teal/50 transition-all duration-300 hover:scale-105 w-full"
+                  >
+                    <Mail className="w-5 h-5" />
+                    <span>Enviar E-mail</span>
+                  </a>
+                  <Link
+                    to="/portfolio"
+                    className="inline-flex items-center justify-center space-x-2 px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 w-full"
+                  >
+                    <span>Ver Portfólio</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Mail, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, Twitter, Globe } from 'lucide-react';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -57,6 +57,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contato</h3>
             <ul className="space-y-3">
+              <li className="flex items-start space-x-2 text-white/60 text-sm">
+                <Globe className="w-4 h-4 text-plage-teal mt-0.5 flex-shrink-0" />
+                <span>PLAGE System - Tecnologia e Inovação</span>
+              </li>
               <li className="flex items-start space-x-2 text-white/60 text-sm">
                 <Mail className="w-4 h-4 text-plage-teal mt-0.5 flex-shrink-0" />
                 <a href="mailto:suporte@plagesystem.com.br" className="hover:text-plage-teal transition-colors">
