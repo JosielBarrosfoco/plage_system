@@ -29,7 +29,23 @@ jobs:
       - name: Build project
         run: npm run build
       
+      - name: Check FTP secrets
+        id: check-secrets
+        run: |
+          if [ -z "${{ secrets.FTP_SERVER }}" ] || [ -z "${{ secrets.FTP_USERNAME }}" ] || [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
+            echo "⚠️ Secrets FTP não configurados. Pulando deploy."
+            echo "Para configurar, adicione os seguintes secrets no GitHub:"
+            echo "  - FTP_SERVER"
+            echo "  - FTP_USERNAME"
+            echo "  - FTP_PASSWORD"
+            echo "skip_deploy=true" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Secrets FTP configurados."
+            echo "skip_deploy=false" >> $GITHUB_OUTPUT
+          fi
+      
       - name: Deploy to Hostinger via FTP
+        if: steps.check-secrets.outputs.skip_deploy != 'true'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
