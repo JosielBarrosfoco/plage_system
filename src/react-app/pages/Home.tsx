@@ -64,10 +64,15 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center space-y-8">
-            <div className="inline-block">
+            <div className="inline-block space-y-2">
               <span className="px-4 py-2 bg-plage-teal/20 border border-plage-teal/30 rounded-full text-plage-teal text-sm font-medium backdrop-blur-sm">
                 Sistema Inteligente de Tecnologia
               </span>
+              <div className="block">
+                <span className="px-4 py-2 bg-gradient-to-r from-plage-gold/30 to-plage-teal/30 border-2 border-plage-gold/50 rounded-full text-plage-gold text-sm font-bold backdrop-blur-sm animate-pulse">
+                  ✨ DEPLOY TESTE - Sistema Funcionando! ✨
+                </span>
+              </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
