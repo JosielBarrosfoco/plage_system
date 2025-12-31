@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-3 text-white/60 text-sm">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-plage-teal" />
-                <span>São Paulo, SP</span>
+                <span>832 Avenida General Ataíde Teive</span>
               </li>
             </ul>
           </div>
