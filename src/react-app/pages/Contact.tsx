@@ -107,7 +107,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-white mb-1">Localização</p>
-                      <p className="text-white/60 text-sm">São Paulo, SP</p>
+                      <p className="text-white/60 text-sm">832 Avenida General Ataíde Teive</p>
                     </div>
                   </div>
 
