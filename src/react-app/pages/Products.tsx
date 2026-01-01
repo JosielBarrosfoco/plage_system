@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Filter } from 'lucide-react';
+import { Filter, Store, ExternalLink } from 'lucide-react';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
 import ProductCard from '@/react-app/components/ProductCard';
@@ -52,9 +52,19 @@ export default function Products() {
             <h1 className="text-5xl md:text-6xl font-display font-bold text-white mb-6">
               Nossos <span className="text-gradient-teal">Produtos</span>
             </h1>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-8">
               Soluções digitais profissionais prontas para uso. Escolha o produto ideal para sua necessidade.
             </p>
+            <a
+              href="https://plagestore.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-plage-gold to-yellow-400 text-plage-dark font-semibold rounded-xl hover:shadow-glow-gold transition-all duration-300 gap-2 transform hover:scale-105"
+            >
+              <Store size={20} />
+              Comprar Sistemas Prontos
+              <ExternalLink size={18} className="group-hover:translate-x-0.5 transition-transform" />
+            </a>
           </div>
 
           {/* Filters */}

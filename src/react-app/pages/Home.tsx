@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { ArrowRight, Zap, Shield, Clock, Target, Code, BarChart, FileSpreadsheet, Globe, Cog, Sparkles } from 'lucide-react';
+import { ArrowRight, Zap, Shield, Clock, Target, Code, BarChart, FileSpreadsheet, Globe, Cog, Sparkles, Store, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
@@ -169,14 +169,26 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center">
-            <Link
-              to="/produtos"
-              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-light text-plage-dark font-semibold rounded-xl hover:shadow-glow-teal transition-all duration-300 gap-2"
-            >
-              Ver Todos os Produtos
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+          <div className="text-center space-y-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                to="/produtos"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-light text-plage-dark font-semibold rounded-xl hover:shadow-glow-teal transition-all duration-300 gap-2"
+              >
+                Ver Todos os Produtos
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="https://plagestore.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-plage-gold to-yellow-400 text-plage-dark font-semibold rounded-xl hover:shadow-glow-gold transition-all duration-300 gap-2 transform hover:scale-105"
+              >
+                <Store size={20} />
+                Comprar na Loja
+                <ExternalLink size={18} className="group-hover:translate-x-0.5 transition-transform" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
