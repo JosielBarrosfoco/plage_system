@@ -119,7 +119,7 @@ export default function ProductDetail() {
 
               <div className="flex gap-4 mb-8">
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5595981249755"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center px-6 py-4 bg-gradient-to-r from-plage-teal to-plage-teal-light text-plage-dark font-semibold rounded-xl hover:shadow-glow-teal transition-all duration-300 gap-2"

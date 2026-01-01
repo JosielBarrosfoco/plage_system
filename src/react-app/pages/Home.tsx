@@ -5,6 +5,7 @@ import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
 import ProductCard from '@/react-app/components/ProductCard';
 import TestimonialCard from '@/react-app/components/TestimonialCard';
+import Logo from '@/react-app/components/Logo';
 
 interface Product {
   id: number;
@@ -87,6 +88,11 @@ export default function Home() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-plage-gold/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         <div className="relative max-w-7xl mx-auto text-center">
+          {/* Logo destacado */}
+          <div className="mb-8 flex justify-center">
+            <Logo variant="full" height="h-16 md:h-20 lg:h-24" linkTo="" className="opacity-90 hover:opacity-100 transition-opacity" />
+          </div>
+          
           <div className="inline-flex items-center gap-2 px-4 py-2 glass-panel mb-8 animate-float">
             <Sparkles className="w-4 h-4 text-plage-teal" />
             <span className="text-sm text-white/80 font-medium">Transformação Digital de Alto Impacto</span>
@@ -248,7 +254,7 @@ export default function Home() {
                 Falar com Especialista
               </Link>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5595981249755"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 glass-panel-hover text-white font-semibold rounded-xl"

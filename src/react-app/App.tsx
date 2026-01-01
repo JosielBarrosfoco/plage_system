@@ -5,10 +5,12 @@ import ProductDetailPage from "@/react-app/pages/ProductDetail";
 import ServicesPage from "@/react-app/pages/Services";
 import AboutPage from "@/react-app/pages/About";
 import ContactPage from "@/react-app/pages/Contact";
+import WhatsAppFloatButton from "@/react-app/components/WhatsAppFloatButton";
 
 export default function App() {
   return (
     <Router>
+      <WhatsAppFloatButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/produtos" element={<ProductsPage />} />

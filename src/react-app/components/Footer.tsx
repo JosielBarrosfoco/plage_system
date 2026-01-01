@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Globe } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -8,20 +9,36 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-3xl font-display font-bold text-gradient-teal-gold">
-              PLAGE
-            </h3>
+            <Logo variant="light" className="mb-2" />
             <p className="text-white/60 text-sm leading-relaxed">
               Softhouse especializada em soluções digitais profissionais que impulsionam seu negócio.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61585843803921" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors" 
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors">
+              <a 
+                href="https://www.instagram.com/plage_system/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors" 
+                aria-label="Instagram"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/110667617/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 glass-panel-hover rounded-lg text-white/70 hover:text-plage-teal transition-colors" 
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
@@ -71,12 +88,16 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-6">Contato</h4>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3 text-white/60 text-sm">
+                <Globe size={18} className="mt-0.5 flex-shrink-0 text-plage-teal" />
+                <a href="https://plagesystem.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-plage-teal transition-colors">plagesystem.com.br</a>
+              </li>
+              <li className="flex items-start space-x-3 text-white/60 text-sm">
                 <Mail size={18} className="mt-0.5 flex-shrink-0 text-plage-teal" />
-                <span>contato@plagesystem.com.br</span>
+                <a href="mailto:suporte@plagesystem.com.br" className="hover:text-plage-teal transition-colors">suporte@plagesystem.com.br</a>
               </li>
               <li className="flex items-start space-x-3 text-white/60 text-sm">
                 <Phone size={18} className="mt-0.5 flex-shrink-0 text-plage-teal" />
-                <span>(11) 99999-9999</span>
+                <a href="tel:+5595981249755" className="hover:text-plage-teal transition-colors">(95) 98124-9755</a>
               </li>
               <li className="flex items-start space-x-3 text-white/60 text-sm">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-plage-teal" />
@@ -88,7 +109,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-white/50 text-sm">
-            &copy; {new Date().getFullYear()} PLAGE. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} <span className="font-semibold text-gradient-teal-gold">PLAGE</span> <span className="text-white/40">SYSTEM</span>. Todos os direitos reservados.
           </p>
         </div>
       </div>

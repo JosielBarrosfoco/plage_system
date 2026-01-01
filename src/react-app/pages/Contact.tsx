@@ -83,8 +83,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-white mb-1">E-mail</p>
-                      <a href="mailto:contato@plagesystem.com.br" className="text-plage-teal hover:text-plage-teal-light transition-colors text-sm">
-                        contato@plagesystem.com.br
+                      <a href="mailto:suporte@plagesystem.com.br" className="text-plage-teal hover:text-plage-teal-light transition-colors text-sm">
+                        suporte@plagesystem.com.br
                       </a>
                     </div>
                   </div>
@@ -95,8 +95,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium text-white mb-1">Telefone</p>
-                      <a href="tel:+5511999999999" className="text-plage-teal hover:text-plage-teal-light transition-colors text-sm">
-                        (11) 99999-9999
+                      <a href="tel:+5595981249755" className="text-plage-teal hover:text-plage-teal-light transition-colors text-sm">
+                        (95) 98124-9755
                       </a>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                     <div>
                       <p className="font-medium text-white mb-1">WhatsApp</p>
                       <a
-                        href="https://wa.me/5511999999999"
+                        href="https://wa.me/5595981249755"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-green-400 hover:text-green-300 transition-colors text-sm"
@@ -214,7 +214,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 glass-panel rounded-xl text-white placeholder:text-white/40 focus:ring-2 focus:ring-plage-teal focus:border-transparent outline-none transition-all"
-                        placeholder="(11) 99999-9999"
+                        placeholder="(95) 98124-9755"
                       />
                     </div>
 

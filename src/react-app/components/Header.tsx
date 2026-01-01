@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Logo from './Logo';
 
 export default function Header() {
   const location = useLocation();
@@ -22,10 +23,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="text-3xl font-display font-bold text-gradient-teal-gold">PLAGE</div>
-            <div className="hidden sm:block text-xs text-white/60 group-hover:text-white/80 transition-colors">Softhouse</div>
-          </Link>
+          <Logo variant="light" showText={true} className="group" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -43,7 +41,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5595981249755"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2.5 bg-gradient-to-r from-plage-teal to-plage-teal-light text-plage-dark text-sm font-semibold rounded-lg hover:shadow-glow-teal transition-all duration-300"
@@ -80,7 +78,7 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5595981249755"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2.5 bg-gradient-to-r from-plage-teal to-plage-teal-light text-plage-dark text-sm font-semibold rounded-lg text-center"
